@@ -1,0 +1,31 @@
+
+Inner Join - only get the stuff that matches in both tables.
+
+Example
+Select * from (Table name) Inner Join (second table name) on (what two things need to match  example Customer.CityId = city.CityId
+
+
+Left join- everything from one table (left) to appear as well as the matches from the second table.
+
+Example
+Select * from (Table name/left) left Join (second table name) on (what two things need to match  example Customer.CityId = city.CityId
+
+
+Right join - get all data from right table and all the data that matches from left table
+(Inner joint + all of right data)
+
+Example
+Select * from (Table name/right) right Join (second table name) on (what two things need to match  )(example:)Customer.CityId = city.CityId
+
+Full join - inner join + all other data (also known full outer join )
+Example
+Select * from (Table name/full) FULL Join (second table name) on (what two things need to match  )(example:)Customer.CityId = city.CityId
+
+
+
+You can also specify what columns you want to show up
+
+Filter : you can use word clause in the end
+Example
+Where city.cityName = ‘Kansas City’
+(Try to not put it on clause)
